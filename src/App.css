@@ -1,38 +1,80 @@
+body {
+    margin:0;
+}
+
 .App {
-  text-align: center;
+    background-color: rgb(248, 248, 248);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    font-family: 'Open Sans', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing-text {
+    margin: 0 auto;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.landing-container {
+    height: calc(65vh - 49px);
+    background-color: #020202;
+    background-image:  url('./assets/topography.svg');
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.landing-text h1{
+    font-weight: bold;
+    width:90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing-text h4 {
+    font-size: 1.2rem;
+    width:60%;
+    font-weight: 200;
 }
+
+.login-container{
+    height: calc(100vh - 49px);
+    background-color: rgb(223, 223, 223);
+    background-image:  url('./assets/topography.svg');
+}
+
+
+.login-form-container {
+    background-color: WHITE;
+    box-shadow: inset 0 0 2000px #dbdbdb80;
+    border-radius: 10px;   
+}
+
+.img-split {
+    border-left: 3.5px dotted rgb(151, 151, 151) ;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.Resizable{
+    height: 100px;
+    width: 100%;
+    
+}
+.Draggable{
+    background: rgba(248, 248, 248, 0.2);
+    border-top: 1px solid rgb(196, 196, 196);
+    cursor: col-resize;
+    height: 10px;
+    width: 100%;
+    resize: vertical;
+}
+.stop-scroll {
+
+    height: 100% !important;
+    
+    overflow: hidden !important;
+    
+    }
+
